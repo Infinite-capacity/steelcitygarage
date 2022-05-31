@@ -89,7 +89,8 @@ main {
   right: 0;
   top: 85px;
   background-color: hsla(180, 13%, 20%, .7);
-  width: 30%;
+  width: 100%;
+  text-align: center;
 }
 
 
