@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--The order of the stylesheets matters! The second sheet will overwrite the first.-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Steel City Garage</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="./images/logo.png" alt="Home"></a>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="topnav">
+  <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="">Services</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+          </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="banner"> <!--backdrop of shop image w/ possible slogan -->
+        <div class="banner-text">
+          <h1>Over 20 Years of Experience...</h1>
+          <h3>Offering a variety of services making us your one-stop mechanic shop!</h3>
+        </div>
+      </div>
+      <div class="services">
+        <h2>Services</h2>
+        <div id="repair" class="service-card">
+          <h3>Auto Repair</h3>
+        </div>
+        <div id="maintenance" class="service-card">
+          <h3>Preventative Maintenance</h3>
+        </div>
+        <div id="wheels" class="service-card">
+          <h3>Wheels and Tires</h3>
+        </div>
+        <div id="lift" class="service-card">
+          <h3>Lift Kits</hamburger menu cssh3>
+        </div>
+        <div id="suspension" class="service-card">
+          <h3>Suspensions</h3>
+        </div>
+        <div id="exhaust" class="service-card">
+          <h3>Exhausts</h3>
+        </div>
+      </div>
+      <div class="contact-map">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.289206663876!2d-104.61573034890858!3d38.272788291022806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8713a2fe3f4710ef%3A0xe2f2b7a3dea1c18c!2s601%20N%20Greenwood%20St%2C%20Pueblo%2C%20CO%2081003!5e0!3m2!1sen!2sus!4v1653564464780!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact">
+          <h2>Contact Us:</h2>
+          <h3>Steel City Garage</h3>
+          <h4>Phone: (719)582-1689</h4>
+          <h4>Location: 601 N Greenwood St.</h4>
+          <h4>Pueblo, CO 81003</h4>
+          <h3>Hours</h3>
+          <h4>M-F 10am - 6pm</h4>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="copywrite">
+        <h4>Copywrite Steel City Garage 2022</h4>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
