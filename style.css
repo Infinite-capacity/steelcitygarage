@@ -60,7 +60,7 @@ main {
 
 .navbar .links a:hover {
   color: #2BA84A;
-  background-color: hsla(180, 13%, 20%, .9)
+  background-color: hsla(180, 13%, 20%, 1)
 }
 
 .navbar .links a:visited {
@@ -88,7 +88,7 @@ main {
   position: fixed;
   right: 0;
   top: 85px;
-  background-color: hsla(180, 13%, 20%, 1);
+  background-color: #040F0F;
   width: 100%;
   text-align: center;
 }
@@ -152,7 +152,7 @@ i.fa,.fa-bars {
   }
 
   .navbar {
-    background-color: hsla(180, 13%, 20%, 1);
+    background-color: #040F0F;
   }
 
 }
