@@ -88,7 +88,7 @@ main {
   position: fixed;
   right: 0;
   top: 85px;
-  background-color: hsla(180, 13%, 20%, .7);
+  background-color: hsla(180, 13%, 20%, 1);
   width: 100%;
   text-align: center;
 }
@@ -149,6 +149,10 @@ i.fa,.fa-bars {
   }
   .topnav {
     z-index: 6;
+  }
+
+  .navbar {
+    background-color: hsla(180, 13%, 20%, 1);
   }
 
 }
