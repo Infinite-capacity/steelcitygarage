@@ -17,7 +17,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: hsla(180, 58%, 4%, .7);
+  background-color: hsla(180, 58%, 4%, .8);
   position: fixed;
   width: 100%;
   top: 0;
@@ -95,7 +95,7 @@ main {
 
 
 .topnav a {
-  color: white;
+  color: #FCFFFC;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -106,7 +106,7 @@ main {
 .topnav a.icon {
   display: none;
   color: #2BA84A;
-  height: 52px;
+  height: 54px;
   font-size: 40px;
   vertical-align: middle;
   display: block;
@@ -118,9 +118,14 @@ main {
 
 
 .topnav a:hover {
-  background-color: #2BA84A;
-  color: hsla(180, 58%, 4%, .7);
+  background-color: hsla(180, 58%, 4%, .7);
+  color: #2BA84A;
 }
+
+.topnav a:active {
+  color: #248232;
+}
+
 
 .active {
   background-color: #04AA6D;
@@ -146,6 +151,7 @@ i.fa,.fa-bars {
   .topnav {
     z-index: 6;
   }
+
 }
 
 
@@ -156,7 +162,7 @@ i.fa,.fa-bars {
   justify-content: center;
   align-items: center;
   height: 500px;
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   background-image: url("./images/garage.png");
   background-size: cover;
