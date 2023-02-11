@@ -5,8 +5,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!--The order of the stylesheets matters! The second sheet will overwrite the first.-->
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Steel City Garage</title>
   </head>
@@ -18,16 +18,16 @@
         </div>
         <div class="links">
           <ul>
-            <li><a href="">Services</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
         </div>
         <div class="topnav">
           <div id="myLinks">
-            <a href="">Services</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
+            <a href="#services-section">Services</a>
+            <a href="#about-section">About</a>
+            <a href="#contact-section">Contact</a>
           </div>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -36,14 +36,111 @@
       </nav>
     </header>
     <main>
+      <!--Banner      -->
       <div class="banner"> <!--backdrop of shop image w/ possible slogan -->
-        <div class="banner-text">
-          <h1>Over 20 Years of Experience...</h1>
-          <h3>Offering a variety of services making us your one-stop mechanic shop!</h3>
-        </div>
+
       </div>
-      <div class="services">
-        <h2>Services</h2>
+
+      <!--Call to action-->
+      <div class="call-to-action">
+        <h2>Call Today For A Free Quote: <a href="tel:7195821689">(719)582-1689</a></h2>
+      </div>
+
+
+      <!--review slider-->
+      <div class="container">
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        <div class="slide-container active-slide">
+          <div class="slide">
+            <i class="fas fa-quote-right icon"></i>
+            <div class="user">
+              <img src="./images/users/karen.png" alt="">
+              <div class="user-info">
+                <h3>Karen Trujillo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">It is the only place I'll take my business.</p>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
+            <i class="fas fa-quote-right icon"></i>
+            <div class="user">
+              <img src="./images/users/jay.png" alt="">
+              <div class="user-info">
+                <h3>Jay Lim</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">Don't let the small size or location fool you. The guys here are very friendly and give you a fair price. I had a quick fix and even with a full shop they fixed my car right away. Highly recommended!</p>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
+            <i class="fas fa-quote-right icon"></i>
+            <div class="user">
+              <img src="./images/users/sabrina.png" alt="">
+              <div class="user-info">
+                <h3>Sabrina Taylor</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">Excellent service!!  I was driving through and my abs light came on.  They spent the time to check the code, check the sensor, go across town to get a new sensor, and installed it all in the same evening so I could continue my trip the next morning. I would highly recommend them for any help.  Reasonably priced.  Less than the dealership!!</p>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
+            <i class="fas fa-quote-right icon"></i>
+            <div class="user">
+              <img src="./images/users/mark.png" alt="">
+              <div class="user-info">
+                <h3>Mark Adams</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text">"Awesome service, good people.</p>
+          </div>
+        </div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+      </div>
+
+      <div class="about" id="about-section">
+        <h2>About Our Shop</h2>
+        <p>Steel City Garage is your friendly local mechanic shop.
+          We're not afraid to tackle the tough jobs that others will turn away.
+          We have but one mission: <strong>Fix your car!</strong>
+          We will work hard to get you back on the road with minimal damage to your wallet.
+          Thank you for supporting your local small business!
+        </p>
+      </div>
+
+      <!--Services      -->
+      <div class="services" id="services-section">
         <div id="repair" class="service-card">
           <h3>Auto Repair</h3>
         </div>
@@ -54,7 +151,7 @@
           <h3>Wheels and Tires</h3>
         </div>
         <div id="lift" class="service-card">
-          <h3>Lift Kits</hamburger menu cssh3>
+          <h3>Lift Kits</h3>
         </div>
         <div id="suspension" class="service-card">
           <h3>Suspensions</h3>
@@ -63,35 +160,53 @@
           <h3>Exhausts</h3>
         </div>
       </div>
-      <div class="contact-map">
+      <div class="contact-map" id="contact-section">
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.289206663876!2d-104.61573034890858!3d38.272788291022806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8713a2fe3f4710ef%3A0xe2f2b7a3dea1c18c!2s601%20N%20Greenwood%20St%2C%20Pueblo%2C%20CO%2081003!5e0!3m2!1sen!2sus!4v1653564464780!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.2898843358416!2d-104.61572678421282!3d38.27277257967192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ddf851c32d5ca9%3A0xe82cde4710461f2e!2sSteel%20City%20Garage%20Wheels%20%26%20Tires%20LLC!5e0!3m2!1sen!2sus!4v1675998498102!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="contact">
           <h2>Contact Us:</h2>
           <h3>Steel City Garage</h3>
-          <h4>Phone: (719)582-1689</h4>
-          <h4>Location: 601 N Greenwood St.</h4>
-          <h4>Pueblo, CO 81003</h4>
+          <h4>Phone: <a href="tel:7195821689">(719)582-1689</a></h4>
+          <h4>Email: <a href="mailto:steelcitygarage_wheels_tires_llc@outlook.com">
+            steelcitygarage_wheels_tires_llc@outlook.com</a></h4>
+          <h4>Location: <a href="https://goo.gl/maps/BBrGLZ16z4vCxpTJA">601 N Greenwood St. Pueblo, CO 81003</a></h4>
           <h3>Hours</h3>
-          <h4>M-F 10am - 6pm</h4>
+          <h4>M-F 8:30-5:30</h4>
+          <h4>Sat 8:30-2:30</h4>
+          <h4>Closed Sunday</h4>
         </div>
       </div>
     </main>
     <footer>
       <div class="copywrite">
-        <h4>Copywrite Steel City Garage 2022</h4>
+        <h4>Copywrite Steel City Garage 2023</h4>
       </div>
     </footer>
     <script>
       function myFunction() {
-        var x = document.getElementById("myLinks");
+        const x = document.getElementById("myLinks");
         if (x.style.display === "block") {
           x.style.display = "none";
       } else {
         x.style.display = "block";
       }
     }
+    const slides = document.querySelectorAll('.slide-container');
+    let index = 0;
+    function next() {
+      slides[index].classList.remove('active-slide');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active-slide');
+    }
+
+      function prev() {
+        slides[index].classList.remove('active-slide');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add('active-slide');
+      }
+
+
 </script>
   </body>
 </html>

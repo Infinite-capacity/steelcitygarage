@@ -1,6 +1,6 @@
 /*Universal styles*/
 body {
-  background-color: #040F0F;
+  background-color: #E5E5E5;
 }
 
 main {
@@ -17,11 +17,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: hsla(180, 58%, 4%, .8);
+  background-color: #000000;
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom: 2px solid #2BA84A;
   z-index: 5;
 }
 
@@ -51,24 +50,24 @@ main {
 .navbar .links a {
   font-size: 18px;
   text-decoration: none;
-  color: #FCFFFC;
-  border: 1px solid #2BA84A;
+  color: #FCA311;
+  border: 1px solid #FCA311;
   border-radius: 5px;
   padding: 7px;
-  background-color: hsla(180, 13%, 20%, .7);
+  background-color: #000000;
 }
 
 .navbar .links a:hover {
-  color: #2BA84A;
+  color: #FFFFFF;
   background-color: hsla(180, 13%, 20%, 1)
 }
 
 .navbar .links a:visited {
-  color: #248232;
+  color: #FCA311;
 }
 
 .navbar .links a:active {
-  color: #248232;
+  color: #FCA311;
 }
 
 /*hamburger menu*/
@@ -87,7 +86,7 @@ main {
   display: none;
   position: fixed;
   right: 0;
-  top: 85px;
+  top: 83px;
   background-color: #040F0F;
   width: 100%;
   text-align: center;
@@ -95,7 +94,7 @@ main {
 
 
 .topnav a {
-  color: #FCFFFC;
+  color: #FCA311;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -104,8 +103,7 @@ main {
 
 
 .topnav a.icon {
-  display: none;
-  color: #2BA84A;
+  color: #FCA311;
   height: 54px;
   font-size: 40px;
   vertical-align: middle;
@@ -118,16 +116,16 @@ main {
 
 
 .topnav a:hover {
-  color: #2BA84A;
+  color: #FFFFFF;
 }
 
 .topnav a:active {
-  color: #248232;
+  color: #FCA311;
 }
 
 
 .active {
-  background-color: #04AA6D;
+  background-color: #FCA311;
   color: white;
 }
 
@@ -170,23 +168,24 @@ i.fa,.fa-bars {
   background-image: url("./images/garage.png");
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
 }
 
 .banner-text {
-  color: hsla(120, 100%, 99%, .8);
+  color: #FFFFFF;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 600px;
-  background-color: hsla(180, 58%, 4%,.7);
+  background-color: hsla(221, 51%, 16%, .6);
   border-radius: 15px;
-  border: 2px solid hsla(120, 100%, 99%, .8);
+  border: 2px solid #FFFFFF;
   padding: 30px 0;
 }
 
 .banner-text h1, h3 {
   text-align: center;
-  color: hsla(120, 100%, 99%, .8);
+  color: #FFFFFF;
 }
 
 .banner-text h1 {
@@ -198,6 +197,155 @@ i.fa,.fa-bars {
 .banner-text h3 {
   font-size: 22px;
   max-width: 500px;
+}
+
+/*call to action*/
+
+.call-to-action{
+  text-align: center;
+  color: #14213D;
+}
+
+.call-to-action h2{
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 3vh;
+}
+
+.call-to-action a {
+  color: #14213D;
+}
+
+.call-to-action a:hover {
+  color: #FCA311;
+}
+
+
+/*Review slider*/
+.container {
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  perspective: 1000px;
+  color: #000000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .slide-container {
+  display: none;
+}
+
+.active-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slide-container .slide {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 10px #3337;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 20px 35px;
+  position: relative;
+  transform-style: preserve-3d;
+  z-index: 4;
+}
+
+.slide-container .slide .icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 60px;
+  color: #14213D;
+}
+
+.slide-container .slide img{
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.slide-container .slide  .user {
+  display: flex;
+  align-items: center;
+}
+
+.slide-container .slide  .user h3 {
+  color: #000000;
+  font-size: 20px;
+}
+
+.slide-container .slide .user .stars i {
+  color: #FCA311;
+  font-size: 15px;
+}
+
+.slide-container .slide  .user .text {
+  color: #000000;
+  font-size: 14px;
+  padding-top: 15px;
+  font-style: italic;
+}
+
+.container #next, .container #prev {
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  background: #FFF;
+  color: #000;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px #3337;
+  z-index: 5;
+}
+
+.container #next:hover, .container #prev:hover {
+  background: #333;
+  color: #FFF;
+}
+/*about*/
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  color: #000;
+  background-color: hsla(221, 51%, 16%, .5);
+  border: 2px solid #14213D;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.about h2{
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+
+.about p {
+  font-size: 18px;
+  line-height: 25px;
+}
+.about p strong{
+  font-weight: bold;
 }
 
 /*services*/
@@ -228,17 +376,19 @@ i.fa,.fa-bars {
   margin: 20px 15px;
   background-size: cover;
   background-position: center;
+  border: 1px solid #14213D;
+  border-radius: 5px;
 }
 
 .service-card h3 {
-  background-color: #040F0F;
+  background-color: #14213D;
   width: 100%;
   line-height: 30px;
   text-align: center;
   font-size: 20px;
-  padding-top: 10px;
+  padding: 10px 0;
   margin: 0;
-  color: hsla(120, 100%, 99%, .7);
+  color: #FFFFFF;
 }
 
 
@@ -275,6 +425,8 @@ i.fa,.fa-bars {
 }
 .map{
   width: 50%;
+  border: 2px solid #14213D;
+  border-radius: 10px;
 }
 
 .map iframe {
@@ -287,8 +439,8 @@ i.fa,.fa-bars {
   flex-direction: column;
   width: 50%;
   text-align: left;
-  background-color: hsla(180, 13%, 20%, .5);
-  border: 1px solid hsla(120, 100%, 99%, .7);
+  background-color: hsla(221, 51%, 16%, .5);
+  border: 2px solid #14213D;
   border-radius: 10px;
   margin-left: 10px;
 }
@@ -297,7 +449,12 @@ i.fa,.fa-bars {
   margin-left: 40px;
   text-align: left;
   line-height: 30px;
-  color: #2BA84A;
+  color: #14213D;
+}
+
+
+.contact a{
+  color: #14213D;
 }
 
 .contact h2 {
@@ -334,8 +491,8 @@ i.fa,.fa-bars {
 /*footer*/
 footer {
   margin-top: 30px;
-  color: #2BA84A;
-  background-color: #040F0F;
+  color: #FCA311;
+  background-color: #000000;
   height: 50px;
   width: 100%;
   text-align: left;
