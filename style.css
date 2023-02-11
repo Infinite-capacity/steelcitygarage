@@ -490,6 +490,10 @@ i.fa,.fa-bars {
   .call-to-action h2{
     font-size: 24px;
   }
+  .slide-container .slide .icon {
+    display: none;
+  }
+
 }
 
 
