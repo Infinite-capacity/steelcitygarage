@@ -230,7 +230,7 @@ i.fa,.fa-bars {
   position: relative;
   perspective: 1000px;
   color: #000000;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,7 +251,7 @@ i.fa,.fa-bars {
   box-shadow: 0 5px 10px #3337;
   width: 100%;
   max-width: 500px;
-  min-width: 300px;
+  min-width: 200px;
   padding: 20px 35px;
   position: relative;
   transform-style: preserve-3d;
@@ -455,6 +455,7 @@ i.fa,.fa-bars {
 
 .contact a{
   color: #14213D;
+  word-wrap: break-word;
 }
 
 .contact h2 {
@@ -469,7 +470,8 @@ i.fa,.fa-bars {
   font-size: 20px;
   font-weight: bold;
 }
-
+.contact h4 {
+}
 @media only screen and (max-width: 888px) {
   .contact-map {
     flex-wrap: wrap;
@@ -484,6 +486,9 @@ i.fa,.fa-bars {
   }
   .map {
     width: 80%;
+  }
+  .call-to-action h2{
+    font-size: 24px;
   }
 }
 
