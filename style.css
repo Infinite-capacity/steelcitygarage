@@ -320,7 +320,7 @@ i.fa,.fa-bars {
 .about {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   max-width: 1000px;
   color: #000;
   background-color: hsla(221, 51%, 16%, .5);
